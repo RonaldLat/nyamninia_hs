@@ -9,9 +9,9 @@
   </p>
   <div class="max-w-md pt-3" />
   <ul class="flex font-[Play] capitalize gap-3 text-myColor-300">
-    <li><a href="/">Home</a></li>
-    <li><a href="portofolio">Portofolio</a></li>
-    <li><a href="/blog">Blog</a></li>
+    <li><a href="/about">About Us</a></li>
+    <li><a href="/calendar">Calendar</a></li>
+    <li><a href="/Con">Blog</a></li>
   </ul>
 
   <p class="text-sm text-gray-500">

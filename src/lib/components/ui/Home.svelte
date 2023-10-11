@@ -2,37 +2,16 @@
   import { gFade } from '$lib/gsapAnimations/tweenMe';
 </script>
 
-<div
-  class="relative flex flex-col font-[Ubuntu] w-full  lg:pt-0 lg:flex-col lg:pb-0"
->
-  <div class=" pb-20 bg-myColor-600 min-h-max  w-full">
-    <h1 class="text-5xl font-[Maven]">Welcome to Nyamninia High School</h1>
-    <p class="text-4xl">The People For Tomorrow</p>
-  </div>
-    <div class="flex flex-col  gap-2 md:flex-row   h-32   mx-2   ">
-      <div class=" w-full bg-myColor-200 p-2">
-        <p class="pt-0">Mission</p>
-        <div class="bg-transparent w-1/4 border-b-black border " />
-        <p class="text-sm">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic iusto qui
-          facilis nostrum dolorem quo.
-        </p>
-      </div>
-      <div class="bg-myColor-400 w-full p-2">
-        <p class="pt-0">Vision</p>
-        <div class=" w-1/4 border-b-black border " />
-        <p class="text-sm">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic iusto qui
-          facilis nostrum dolorem quo.
-        </p>
-      </div>
-      <div class="w-full bg-myColor-200 p-2">
-        <p class="pt-0">Goals</p>
-        <div class="bg-transparent w-1/4 border-t-black border " />
-        <p class="text-sm">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic iusto qui
-          facilis nostrum dolorem quo.
-        </p>
-      </div>
-    </div>
-</div>
+<section>
+	<div class="dark:bg-violet-400">
+		<div class="container flex flex-col items-center px-4 py-16 pb-24 mx-auto text-center lg:pb-56 md:py-32 md:px-10 lg:px-32 dark:text-gray-900">
+			<h1 class="text-5xl font-bold leadi sm:text-6xl xl:max-w-3xl dark:text-gray-900">Provident blanditiis cum exercitationem</h1>
+			<p class="mt-6 mb-8 text-lg sm:mb-12 xl:max-w-3xl dark:text-gray-900">Cupiditate minima voluptate temporibus quia? Architecto beatae esse ab amet vero eaque explicabo!</p>
+			<div class="flex flex-wrap justify-center">
+				<button type="button" class="px-8 py-3 m-2 text-lg font-semibold rounded dark:bg-gray-800 dark:text-gray-50">Get started</button>
+				<button type="button" class="px-8 py-3 m-2 text-lg border rounded dark:border-gray-700 dark:text-gray-900">Learn more</button>
+			</div>
+		</div>
+	</div>
+	<img src="https://source.unsplash.com/random/480x320" alt="" class="w-5/6 mx-auto mb-12 -mt-20 rounded-lg shadow-md lg:-mt-40 dark:bg-gray-500">
+</section>
