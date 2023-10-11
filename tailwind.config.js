@@ -16,7 +16,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        myColorBak: {
+        greenBak: {
           50: '#f1fafe',
           100: '#e3f2fb',
           200: '#c0e6f7',
@@ -42,7 +42,7 @@ export default {
           900: '#0c4a6e',
           950: '#082f49'
         },
-        myColor: {
+        green: {
           50: '#f0fdf4',
           100: '#dbfde6',
           200: '#b9f9ce',

@@ -52,7 +52,7 @@
       class="max-w-lg font-[Play] mb-5 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none md:mb-6 group"
     >
       <span class="inline-block mb-1 sm:mb-4">
-        Things I have <span class="text-myColor-500">built </span></span
+        Things I have <span class="text-green-500">built </span></span
       >
       <div
         class="h-1 ml-auto duration-300 origin-left transform scale-x-30 group-hover:scale-x-100"
@@ -69,7 +69,7 @@
     {#each projects as project}
       <li class="flex-shrink-0 w-[85%] scroll-ml-6 py-4 px-2 snap-center">
         <div
-          class="relative overflow-hidden rounded bg-slate-200 drop-shadow-sm drop-shadow-myColor-800 hover:drop-shadow-myColor-400 hover:drop-shadow-sm transition duration-200 transform hover:translate-y-2 hover:shadow-lg"
+          class="relative overflow-hidden rounded bg-slate-200 drop-shadow-sm drop-shadow-green-800 hover:drop-shadow-green-400 hover:drop-shadow-sm transition duration-200 transform hover:translate-y-2 hover:shadow-lg"
         >
           <img
             class="object-contain w-full h-56 md:h-64 xl:h-80"
@@ -89,7 +89,7 @@
               <li class="text-sm">
                 <a
                   href={project.url}
-                  class="decoration-gray-300 hover:text-myColor-300"
+                  class="decoration-gray-300 hover:text-green-300"
                 >
                   <p size="1.5em"><ExternalLink /></p>
                 </a>
@@ -97,7 +97,7 @@
               <li class="text-sm">
                 <a
                   href={project.git}
-                  class="decoration-gray-300 hover:text-myColor-300"
+                  class="decoration-gray-300 hover:text-green-300"
                 >
                   <p size="1.5em"><Code /></p>
                 </a>
@@ -112,7 +112,7 @@
     <a
       href="/portofolio"
       aria-label=""
-      class="inline-flex items-center font-semibold underline text-myColor-600 decoration-2 transition-colors duration-200 hover:text-myColor-800"
+      class="inline-flex items-center font-semibold underline text-green-600 decoration-2 transition-colors duration-200 hover:text-green-800"
     >
       See more
       <ChevronRight />

@@ -21,7 +21,7 @@
         >
           A programmer is<br class="hidden md:block" />
           as good as the
-          <span class="inline-block text-myColor-500">tools</span> he uses
+          <span class="inline-block text-green-500">tools</span> he uses
         </h2>
         <p class="text-base text-gray-700 md:text-lg">
           To be efficient and productive in what I do, I have carefully picked

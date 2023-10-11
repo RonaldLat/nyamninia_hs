@@ -8,7 +8,7 @@
     Subscribe to my newsletter to get regular content I publish on my blog.
   </p>
   <div class="max-w-md pt-3" />
-  <ul class="flex font-[Play] capitalize gap-3 text-myColor-300">
+  <ul class="flex font-[Play] capitalize gap-3 text-green-300">
     <li><a href="/about">About Us</a></li>
     <li><a href="/calendar">Calendar</a></li>
     <li><a href="/Con">Blog</a></li>

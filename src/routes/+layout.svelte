@@ -55,7 +55,7 @@
 </script>
 
 <div
-  class="fixed z-20 top-0 left-0 h-full w-full md:w-1/2 bg-myColor-800 shadow-lg transition-transform transform -translate-x-full ease-in-out duration-300"
+  class="fixed z-20 top-0 left-0 h-full w-full md:w-1/2 bg-green-800 shadow-lg transition-transform transform -translate-x-full ease-in-out duration-300"
   class:translate-x-0={showSideNav}
   class:-translate-x-full={!showSideNav}
 >
@@ -72,10 +72,10 @@
 </div>
 <div
   bind:this={topBar}
-  class="bg-black bg-blend-hard-light opacity-85 h-12 w-full justify-between cursor-pointer flex flex-row hover:bg-mycolor-600 z-20 transition ease-in duration-150 delay-150 text-2xl fixed top-0 left-0 text-myColor-400 md:hidden"
+  class="bg-transparent bg-blend-hard-light opacity-85 h-12 w-full justify-between cursor-pointer flex flex-row hover:bg-green-600 z-20 transition ease-in duration-150 delay-150 text-2xl fixed top-0 left-0 text-green-400 md:hidden"
 >
   <button on:click={toggleSideNav}><Menu /></button>
-  Nyamninia School
+  
 </div>
 
 {#key data.currentRoute}
@@ -89,7 +89,7 @@
 {/key}
 
 <nav
-  class="fixed hidden bottom-0 left-0 px-5 py-2.5 bg-gradient-to-b from-myColor-500 to-black h-13 text-gray-100 flex flex-row items-center w-full justify-between transition ease-in"
+  class="fixed hidden bottom-0 left-0 px-5 py-2.5 bg-gradient-to-b from-green-500 to-black h-13 text-gray-100 flex flex-row items-center w-full justify-between transition ease-in"
   class:bg-gray-900={showSideNav}
 >
   <button on:click={toggleSideNav}><Menu /></button>
