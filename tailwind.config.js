@@ -57,7 +57,8 @@ export default {
         }
       },
       fontFamily: {
-        black: ['Black Ops One']
+        black: ['Black Ops One'],
+        libre: ['Libre Baskerville']
       }
     }
   },

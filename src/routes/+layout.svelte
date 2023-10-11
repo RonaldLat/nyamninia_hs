@@ -72,9 +72,9 @@
 </div>
 <div
   bind:this={topBar}
-  class="bg-transparent bg-blend-hard-light opacity-85 h-12 w-full justify-between cursor-pointer flex flex-row hover:bg-green-600 z-20 transition ease-in duration-150 delay-150 text-2xl fixed top-0 left-0 text-green-400 md:hidden"
+  class="   h-12 w-auto justify-between cursor-pointer flex flex-row  z-20 transition ease-in duration-150 delay-150 text-2xl fixed top-0 left-3 text-green-400 md:hidden"
 >
-  <button on:click={toggleSideNav}><Menu /></button>
+  <button class="hover:scale-75 transition delay-75 ease-in duration-100 fill-white" on:click={toggleSideNav}><Menu color="white"/></button>
   
 </div>
 

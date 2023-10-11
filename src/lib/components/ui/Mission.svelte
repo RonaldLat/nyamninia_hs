@@ -31,7 +31,7 @@
 		</div>
 		<div class="lg:w-1/2 xl:w-3/5 dark:bg-gray-800">
 			<div class="flex items-center justify-center p-4 md:p-8 lg:p-12">
-				<img src="photo3" alt="" class="rounded-lg shadow-lg dark:bg-gray-500 aspect-video sm:min-h-96">
+				<img src="photo3.jgp" alt="" class="rounded-lg shadow-lg dark:bg-gray-500 aspect-video sm:min-h-96">
 			</div>
 		</div>
 	</div>
