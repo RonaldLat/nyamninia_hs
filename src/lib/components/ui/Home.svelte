@@ -6,7 +6,7 @@
 
 
 	<!-- Opened Nav in Mobile, you can use javascript/jQuery -->
-	<div id="nav-opened" class="fixed left-0 right-0 hidden bg-white mx-2 mt-16 rounded-br rounded-bl shadow z-10">
+	<div id="nav-opened" class="fixed left-0 right-0 hidden  mx-2 mt-16 rounded-br rounded-bl shadow z-10">
 		<div class="p-2 divide-y divide-gray-600 flex flex-col">
 			<a href="/about" class="p-2 font-semibold hover:text-indigo-700">About Us</a>
 			<a href="#whyus" class="p-2 font-semibold hover:text-indigo-700">Admissions</a>
@@ -16,7 +16,7 @@
 
 	<header id="up" class="w-screen bg-center  bg-no-repeat  bg-contain h-screen relative md:mb-16 mb-96">
 		<!-- Overlay Background + Center Control -->
-		<div class="h-screen bg-opacity-50 bg-black flex items-center justify-center bg-[url('photo1.jpg')] bg-center bg-cover bg-blend-overlay bg-no-repeat " >
+		<div class="h-screen bg-opacity-50  flex items-center justify-center bg-[url('photo1.jpg')] bg-center bg-cover bg-blend-overlay bg-no-repeat " >
 			<div class="mx-2 text-center font-[libre]">
 				<h1 class="text-white uppercase font-extrabold text-4xl xs:text-5xl md:text-6xl">
 					Nyamninia
