@@ -1,6 +1,8 @@
 <script>
 import { Splide, SplideSlide } from '@splidejs/svelte-splide';
-import '@splidejs/svelte-splide/css';
+//import '@splidejs/svelte-splide/css';
+import '@splidejs/svelte-splide/css/sea-green';
+
 
 console.log(Splide)
 </script>
@@ -8,6 +10,7 @@ console.log(Splide)
     rewind: true,
     width : 800,
     gap   : '1rem',
+    lazyload: 'nearby'
   } }
    aria-label="My Favorite Images">
   <SplideSlide>

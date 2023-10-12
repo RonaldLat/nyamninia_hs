@@ -20,7 +20,7 @@
 	<!-- Opened Nav in Mobile, you can use javascript/jQuery -->
 	<div id="nav-opened" class="fixed left-0 right-0 hidden bg-white mx-2 mt-16 rounded-br rounded-bl shadow z-10">
 		<div class="p-2 divide-y divide-gray-600 flex flex-col">
-			<a href="#about" class="p-2 font-semibold hover:text-indigo-700">About Us</a>
+			<a href="/about" class="p-2 font-semibold hover:text-indigo-700">About Us</a>
 			<a href="#whyus" class="p-2 font-semibold hover:text-indigo-700">Admissions</a>
 			<a href="#showcase" class="p-2 font-semibold hover:text-indigo-700">Academics</a>
 		</div>
