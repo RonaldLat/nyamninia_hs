@@ -3,9 +3,9 @@ import { GraduationCap, BookOpenCheck, CandlestickChart  } from 'lucide-svelte';
 </script>
 
 
-<section class="dark:bg-gray-800 dark:text-gray-100">
+<section class="dark:bg-gray-800 dark:text-gray-100 my-14">
 	<div class="container flex flex-col-reverse mx-auto lg:flex-row">
-		<div class="flex flex-col px-6 py-8 space-y-6 rounded-sm sm:p-8 lg:p-12 lg:w-1/2 xl:w-2/5 dark:bg-violet-400 dark:text-gray-900">
+		<div class="flex flex-col  px-6 py-8 space-y-6 rounded-sm sm:p-8 lg:p-12 lg:w-1/2 xl:w-2/5 dark:bg-violet-400 dark:text-gray-900">
 			<div class="flex space-x-2 sm:space-x-4">
 				<BookOpenCheck/>
 				<div class="space-y-2">

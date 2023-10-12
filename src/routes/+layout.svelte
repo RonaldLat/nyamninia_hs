@@ -78,6 +78,18 @@
   
 </div>
 
+	<nav id="nav" class="fixed inset-x-0 top-0 flex flex-row justify-between z-10 text-white bg-transparent">
+
+
+		<!-- Nav Items Working on Tablet & Bigger Sceen -->
+		<div class="p-4 hidden md:flex flex-row justify-between font-bold">
+			<a id="hide-after-click" href="#about" class="mx-4 text-lg  border-b-2 border-transparent hover:border-b-2 hover:border-green-300 transition duration-500">About Us</a>
+			<a href="#whyus" class="mx-4 text-lg border-b-2 border-transparent hover:border-b-2 hover:border-green-300 transition duration-500">Admissions</a>
+			<a href="#showcase" class="mx-4 text-lg border-b-2 border-transparent hover:border-b-2 hover:border-green-300 transition duration-500">Academics</a>
+		</div>
+
+	</nav>
+
 {#key data.currentRoute}
   <main
     in:fade={{ duration: 200, delay: 200 }}

@@ -8,7 +8,7 @@
   const {} = data;
 </script>
 
-<div class="min-h-screen font-[Ubuntu]  px-0 lg:px-4">
+<div class="min-h-screen font-[Ubuntu]  px-0 lg:px-4  flex flex-col items-center w-full">
   <Home />
   <Misssion/>
   <Achievements/>

@@ -3,14 +3,12 @@ import { Splide, SplideSlide } from '@splidejs/svelte-splide';
 //import '@splidejs/svelte-splide/css';
 import '@splidejs/svelte-splide/css/sea-green';
 
-
-console.log(Splide)
 </script>
 <Splide   options={ {
     rewind: true,
     width : 800,
     gap   : '1rem',
-    lazyload: 'nearby'
+    lazyLoad: 'nearby'
   } }
    aria-label="My Favorite Images">
   <SplideSlide>
@@ -18,5 +16,11 @@ console.log(Splide)
   </SplideSlide>
   <SplideSlide>
     <img src="photo2.jpg" alt="Image 2"/>
+  </SplideSlide>
+  <SplideSlide>
+    <img src="photo3.jpg" alt="Image 2"/>
+  </SplideSlide>
+  <SplideSlide>
+    <img src="photo4.jpg" alt="Image 2"/>
   </SplideSlide>
 </Splide>
