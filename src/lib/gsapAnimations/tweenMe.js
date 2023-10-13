@@ -20,19 +20,18 @@ export function scrowlly(node) {
     }
   };
 }
-export function example(node) {
+export function example(node, delay=0.3) {
   let tl = gsap.timeline({
+    delay:delay,
     scrollTrigger: {
       trigger: node,
-      start: 'bottom 80%',
+      start: 'top 50%',
       end: `+=${node.offsetHeight}`,
-      scrub: 2
-      //stagger: true
     },
     onComplete: tweenComplete
   });
-  tl.from(node, { x: 600, duration: 1 }, '<');
-  tl.from(node, { opacity: 0, duration: 2 }, '<');
+  tl.from(node, { x: 600, duration: 1, stagger: 0.5 }, '<');
+  tl.from(node, { opacity: 0, duration: 2, stagger: 0.5 }, '<');
 
   function tweenComplete() {
     node.dispatchEvent(new CustomEvent('tweenComplete'));
@@ -103,4 +102,24 @@ export function gFade(node) {
   };
 }
 
-// horizontal
+export function rotate(node) {
+  let tl = gsap.timeline({
+    scrollTrigger: {
+      trigger: node,
+      start: 'top 80%',
+      //end: `+=${node.offsetHeight}`,
+    },
+    onComplete: tweenComplete
+  });
+  tl.from(node, { rotation: 360, y: -100, duration: 2, stagger: 0.5 } );
+
+  function tweenComplete() {
+    node.dispatchEvent(new CustomEvent('tweenComplete'));
+  }
+
+  return {
+    destroy() {
+      tl = null;
+    }
+  };
+}
