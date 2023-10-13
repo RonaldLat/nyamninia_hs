@@ -8,9 +8,11 @@
   const {} = data;
 </script>
 
-<div class="min-h-screen font-[Ubuntu]  px-0 lg:px-4  flex flex-col items-center w-full">
+<div
+  class="min-h-screen font-[Ubuntu] px-0 lg:px-4 flex flex-col items-center w-full"
+>
   <Home />
-  <Misssion/>
-  <Achievements/>
-  <Carousel/>
+  <Misssion />
+  <Achievements />
+  <Carousel />
 </div>

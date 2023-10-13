@@ -27,6 +27,7 @@ export function example(node) {
       start: 'bottom 80%',
       end: `+=${node.offsetHeight}`,
       scrub: 2
+      //stagger: true
     },
     onComplete: tweenComplete
   });
@@ -53,8 +54,9 @@ export function gFromDown(node) {
   tl.from(node, {
     duration,
     opacity: 0,
-    ease: SlowMo,
-    scrub: 2
+    ease: 'bounce',
+    scrub: 2,
+    markers: true
   }).from(
     node,
     {

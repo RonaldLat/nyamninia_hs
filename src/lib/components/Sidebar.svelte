@@ -13,7 +13,6 @@
       <a class="block" href="/about">About Us</a>
       <a class="block" href="/contact">Contact Us</a>
       <a class="block" href="/calendar">School Calendar</a>
-      
     </nav>
   </aside>
 </div>

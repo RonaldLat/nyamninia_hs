@@ -72,29 +72,44 @@
 </div>
 <div
   bind:this={topBar}
-  class="   h-12 w-auto justify-between cursor-pointer flex flex-row  z-20 transition ease-in duration-150 delay-150 text-2xl fixed top-0 left-3 text-green-400 md:hidden"
+  class="   h-12 w-auto justify-between cursor-pointer flex flex-row z-20 transition ease-in duration-150 delay-150 text-2xl fixed top-0 left-3 text-green-400 md:hidden"
 >
-  <button class="hover:scale-75 transition delay-75 ease-in duration-100 fill-white" on:click={toggleSideNav}><Menu color="white"/></button>
-  
+  <button
+    class="hover:scale-75 transition delay-75 ease-in duration-100 fill-white"
+    on:click={toggleSideNav}><Menu color="white" /></button
+  >
 </div>
 
-	<nav id="nav" class="fixed inset-x-0 top-0 flex flex-row justify-between z-10 text-white bg-transparent">
-
-
-		<!-- Nav Items Working on Tablet & Bigger Sceen -->
-		<div class="p-4 hidden md:flex flex-row justify-between font-bold">
-			<a id="hide-after-click" href="#about" class="mx-4 text-lg  border-b-2 border-transparent hover:border-b-2 hover:border-green-300 transition duration-500">About Us</a>
-			<a href="#whyus" class="mx-4 text-lg border-b-2 border-transparent hover:border-b-2 hover:border-green-300 transition duration-500">Admissions</a>
-			<a href="#showcase" class="mx-4 text-lg border-b-2 border-transparent hover:border-b-2 hover:border-green-300 transition duration-500">Academics</a>
-		</div>
-
-	</nav>
+<nav
+  id="nav"
+  class="fixed inset-x-0 top-0 flex flex-row justify-between z-10 text-white bg-transparent"
+>
+  <!-- Nav Items Working on Tablet & Bigger Sceen -->
+  <div class="p-4 hidden md:flex flex-row justify-between font-bold">
+    <a
+      id="hide-after-click"
+      href="#about"
+      class="mx-4 text-lg border-b-2 border-transparent hover:border-b-2 hover:border-green-300 transition duration-500"
+      >About Us</a
+    >
+    <a
+      href="#whyus"
+      class="mx-4 text-lg border-b-2 border-transparent hover:border-b-2 hover:border-green-300 transition duration-500"
+      >Admissions</a
+    >
+    <a
+      href="#showcase"
+      class="mx-4 text-lg border-b-2 border-transparent hover:border-b-2 hover:border-green-300 transition duration-500"
+      >Academics</a
+    >
+  </div>
+</nav>
 
 {#key data.currentRoute}
   <main
     in:fade={{ duration: 200, delay: 200 }}
     out:fade={{ duration: 200 }}
-    class="   w-full min-h-screen font-[Poppins]  lg:px-0  overflow-hidden"
+    class="   w-full min-h-screen font-[Poppins] lg:px-0 overflow-hidden"
   >
     <slot />
   </main>
