@@ -22,7 +22,7 @@ gsap.registerPlugin(ScrollTrigger);
       ipsum. Duis nec orci efficitur erat.
     </p>
   </div>
-  <div use:example={0.8} class="box bg-green-700 p-2 flex flex-col gap-2 rounded-md">
+  <div use:example={0.8} class="box bg-green-700 p-2 flex flex-col gap-2 rounded-md text-gray-50">
     <p class="font-bold">Quallfied Staff</p>
     <p class="text-sm">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nec sem

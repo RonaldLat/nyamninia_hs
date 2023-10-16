@@ -2,6 +2,33 @@
   import { Splide, SplideSlide } from '@splidejs/svelte-splide';
   //import '@splidejs/svelte-splide/css';
   import '@splidejs/svelte-splide/css/sea-green';
+
+  const carouselImages = [
+    {
+      url: "photo1.jpg",
+      alt: "image 1"
+    },
+    {
+      url: "photo1.jpg",
+      alt: "image 1"
+    },
+    {
+      url: "photo1.jpg",
+      alt: "image 1"
+    },
+    {
+      url: "photo1.jpg",
+      alt: "image 1"
+    },
+    {
+      url: "photo1.jpg",
+      alt: "image 1"
+    },
+    {
+      url: "photo1.jpg",
+      alt: "image 1"
+    },
+  ]
 </script>
 
 <Splide
@@ -13,16 +40,9 @@
   }}
   aria-label="My Favorite Images"
 >
+  {#each carouselImages as image}
   <SplideSlide>
-    <img src="photo1.jpg" alt="Image 1" />
+    <img src={image.url} alt={image.alt}  />
   </SplideSlide>
-  <SplideSlide>
-    <img src="photo2.jpg" alt="Image 2" />
-  </SplideSlide>
-  <SplideSlide>
-    <img src="photo3.jpg" alt="Image 2" />
-  </SplideSlide>
-  <SplideSlide>
-    <img src="photo4.jpg" alt="Image 2" />
-  </SplideSlide>
+  {/each}}
 </Splide>

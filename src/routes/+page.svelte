@@ -13,6 +13,8 @@
 >
   <Home />
   <Misssion />
-  <Achievements />
+  <div class=" w-full    ">
+    <Achievements />
+  </div>
   <Carousel />
 </div>

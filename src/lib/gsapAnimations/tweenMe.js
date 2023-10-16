@@ -25,47 +25,13 @@ export function example(node, delay=0.3) {
     delay:delay,
     scrollTrigger: {
       trigger: node,
-      start: 'top 50%',
+      start: 'top 80%',
       end: `+=${node.offsetHeight}`,
     },
     onComplete: tweenComplete
   });
   tl.from(node, { x: 600, duration: 1, stagger: 0.5 }, '<');
   tl.from(node, { opacity: 0, duration: 2, stagger: 0.5 }, '<');
-
-  function tweenComplete() {
-    node.dispatchEvent(new CustomEvent('tweenComplete'));
-  }
-
-  return {
-    destroy() {
-      tl = null;
-    }
-  };
-}
-//from down
-export function gFromDown(node) {
-  let tl = gsap.timeline({
-    onComplete: tweenComplete
-  });
-  const duration = 1;
-
-  tl.from(node, {
-    duration,
-    opacity: 0,
-    ease: 'bounce',
-    scrub: 2,
-    markers: true
-  }).from(
-    node,
-    {
-      duration,
-      yPercent: 50,
-      //rotation: -90,
-      ease: 'stepped'
-    },
-    `-=${duration * 0.75}`
-  );
 
   function tweenComplete() {
     node.dispatchEvent(new CustomEvent('tweenComplete'));
@@ -102,16 +68,19 @@ export function gFade(node) {
   };
 }
 
-export function rotate(node) {
+
+export function gFromDown (node, delay=0.3) {
   let tl = gsap.timeline({
+    delay:delay,
     scrollTrigger: {
       trigger: node,
       start: 'top 80%',
-      //end: `+=${node.offsetHeight}`,
+      end: `+=${node.offsetHeight}`,
     },
     onComplete: tweenComplete
   });
-  tl.from(node, { rotation: 360, y: -100, duration: 2, stagger: 0.5 } );
+  tl.from(node, { yPercent: -50, duration: 1 }, '<');
+  //tl.from(node, { opacity: 0, duration: 2, }, '<');
 
   function tweenComplete() {
     node.dispatchEvent(new CustomEvent('tweenComplete'));

@@ -1,4 +1,5 @@
 <script>
+	import  Achievements  from '$lib/components/ui/Achievements.svelte';
   import { gFade } from '$lib/gsapAnimations/tweenMe';
   import Descriptions from '$lib/components/ui/Descriptions.svelte';
 </script>
