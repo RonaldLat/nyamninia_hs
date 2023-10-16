@@ -70,7 +70,7 @@
 >
   <button
     class="hover:scale-75 transition delay-75 ease-in duration-100 fill-white"
-    on:click={toggleSideNav}><Menu color="chartreuse" /></button
+    on:click={toggleSideNav}><Menu color="#388E3C" /></button
   >
 </div>
 
