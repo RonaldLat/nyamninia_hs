@@ -70,14 +70,14 @@
 >
   <button
     class="hover:scale-75 transition delay-75 ease-in duration-100 fill-white"
-    on:click={toggleSideNav}><Menu color="white" /></button
+    on:click={toggleSideNav}><Menu color="chartreuse" /></button
   >
 </div>
 
 <nav
   id="nav"
   bind:this={topBar}
-  class="fixed inset-x-0 top-0 flex flex-row justify-between z-10 text-white bg-transparent"
+  class="fixed inset-x-0 top-0 flex flex-row justify-between z-10 text-white bg-transparent font-[Play]"
 >
   <!-- Nav Items Working on Tablet & Bigger Sceen -->
   <div class="p-4 hidden md:flex flex-row justify-between font-bold">

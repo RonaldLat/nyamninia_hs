@@ -13,7 +13,7 @@ gsap.registerPlugin(ScrollTrigger);
 </script>
 
 <div
-  class="w-full gap-2 md:gap-4 h-auto flex flex-col md:flex-row items-center justify-between"
+  class="w-full gap-5 md:gap-4 h-auto flex flex-col md:flex-row items-center justify-between"
 >
   <div use:example={0.5}  class="box bg-gray-100 p-2 flex flex-col gap-2 rounded-md">
     <p class="font-bold">Bright Learning</p>

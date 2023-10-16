@@ -79,8 +79,33 @@ export function gFromDown (node, delay=0.3) {
     },
     onComplete: tweenComplete
   });
-  tl.from(node, { yPercent: -50, duration: 1 }, '<');
-  //tl.from(node, { opacity: 0, duration: 2, }, '<');
+  tl.from(node, { xPercent: -50, duration: 1.4 }, '<');
+  tl.from(node, { opacity: 0, duration: 1.4, }, '<');
+
+  function tweenComplete() {
+    node.dispatchEvent(new CustomEvent('tweenComplete'));
+  }
+
+  return {
+    destroy() {
+      tl = null;
+    }
+  };
+}
+
+
+export function gAnim2 (node, delay=0.3) {
+  let tl = gsap.timeline({
+    delay:delay,
+    scrollTrigger: {
+      trigger: node,
+      start: 'top 80%',
+      end: `+=${node.offsetHeight}`,
+    },
+    onComplete: tweenComplete
+  });
+  tl.from(node, { yPercent: 50, duration: 1.0 }, 'power');
+  tl.from(node, { opacity: 0, duration: 1.0, }, 'power');
 
   function tweenComplete() {
     node.dispatchEvent(new CustomEvent('tweenComplete'));
