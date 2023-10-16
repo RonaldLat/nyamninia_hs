@@ -42,7 +42,7 @@
 >
   {#each carouselImages as image}
   <SplideSlide>
-    <img src={image.url} alt={image.alt}  />
+    <img class="rounded-sm" src={image.url} alt={image.alt}  />
   </SplideSlide>
   {/each}}
 </Splide>

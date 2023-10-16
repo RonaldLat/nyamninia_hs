@@ -24,24 +24,18 @@
   $: onMount(() => {
     gsap.registerPlugin(ScrollTrigger);
 
-    let tl = gsap
-      .from(topBar, {
-        yPercent: -100,
-        opacity: 0,
-        paused: true,
-        ease: 'elastic',
-        duration: 0.2
-      })
-      .progress(1);
-
-    ScrollTrigger.create({
+    
+  let tl = gsap.timeline({
+    scrollTrigger: {
       trigger: topBar,
-      start: 'top top',
-      end: 99999,
-      onUpdate: (self) => {
-        self.direction === -1 ? tl.play() : tl.reverse();
-      }
-    });
+      scrub: 3,
+      start: '500',
+      ease: 'power'
+      //end: `+=${topBar.offsetHeight}`,
+    },
+  });
+  tl.to(topBar, { backgroundColor: '#388E3C', duration: 3,} );
+
   });
 
   const route = $page.route;
@@ -82,6 +76,7 @@
 
 <nav
   id="nav"
+  bind:this={topBar}
   class="fixed inset-x-0 top-0 flex flex-row justify-between z-10 text-white bg-transparent"
 >
   <!-- Nav Items Working on Tablet & Bigger Sceen -->
