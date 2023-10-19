@@ -28,7 +28,7 @@
   <section class=" w-full">
     <ContactForm />
   </section>
-  <section class=" w-full bg-lime-400">
+  <section class=" w-full ">
     <Directions />
   </section>
 </div>
