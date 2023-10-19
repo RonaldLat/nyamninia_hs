@@ -24,18 +24,16 @@
   $: onMount(() => {
     gsap.registerPlugin(ScrollTrigger);
 
-    
-  let tl = gsap.timeline({
-    scrollTrigger: {
-      trigger: topBar,
-      scrub: 3,
-      start: '500',
-      ease: 'power'
-      //end: `+=${topBar.offsetHeight}`,
-    },
-  });
-  tl.to(topBar, { backgroundColor: '#388E3C', duration: 3,} );
-
+    let tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: topBar,
+        scrub: 3,
+        start: '500',
+        ease: 'power'
+        //end: `+=${topBar.offsetHeight}`,
+      }
+    });
+    tl.to(topBar, { backgroundColor: '#388E3C', duration: 3 });
   });
 
   const route = $page.route;
@@ -80,23 +78,35 @@
   class="fixed inset-x-0 top-0 flex flex-row justify-between z-10 text-white bg-transparent font-[Play]"
 >
   <!-- Nav Items Working on Tablet & Bigger Sceen -->
-  <div class="p-4 hidden md:flex flex-row justify-between font-bold">
-    <a
-      id="hide-after-click"
-      href="#about"
-      class="mx-4 text-lg border-b-2 border-transparent hover:border-b-2 hover:border-green-300 transition duration-500"
-      >About Us</a
-    >
-    <a
-      href="#whyus"
-      class="mx-4 text-lg border-b-2 border-transparent hover:border-b-2 hover:border-green-300 transition duration-500"
-      >Admissions</a
-    >
-    <a
-      href="#showcase"
-      class="mx-4 text-lg border-b-2 border-transparent hover:border-b-2 hover:border-green-300 transition duration-500"
-      >Academics</a
-    >
+  <div
+    class="p-4 hidden md:flex flex-row justify-between align-end bg-green-800 w-full font-bold"
+  >
+    <div class="flex flex-row-reverse justify-center gap-2">
+      <div>
+        <p>Nyamninia</p>
+        <p>Secondary School</p>
+      </div>
+      <img class="inline-block h-14 w-14" src="badge2.webp" alt="badge" />
+    </div>
+    <div class="justify-self-bottom">
+      <a
+        id="hide-after-click"
+        href="/about"
+        class="mx-4 text-lg border-b-2 border-transparent hover:border-b-2 hover:border-green-300 transition duration-500"
+        >About Us</a
+      >
+      <a
+        href="/admission"
+        class="mx-4 text-lg border-b-2 border-transparent hover:border-b-2 hover:border-green-300 transition duration-500"
+        >Admissions</a
+      >
+      <a
+        href="/academics"
+        class="mx-4 text-lg border-b-2 border-transparent hover:border-b-2 hover:border-green-300 transition duration-500"
+        >Academics</a
+      >
+      <div />
+    </div>
   </div>
 </nav>
 
