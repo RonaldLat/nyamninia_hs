@@ -1,5 +1,6 @@
 <script>
-	import ContactForm from './../lib/components/ui/ContactForm.svelte';
+  import Directions from './../lib/components/ui/Directions.svelte';
+  import ContactForm from './../lib/components/ui/ContactForm.svelte';
   import Home from '$lib/components/ui/Home.svelte';
   import Misssion from '$lib/components/ui/Mission.svelte';
   import Achievements from '$lib/components/ui/Achievements.svelte';
@@ -10,7 +11,9 @@
   const {} = data;
 </script>
 
-<div class="min-h-screen font-[Ubuntu] px-0 flex flex-col gap-8 items-center w-full">
+<div
+  class="min-h-screen font-[Ubuntu] px-0 flex flex-col gap-8 items-center w-full"
+>
   <Home />
 
   <div class="h-auto w-5/6 mx-auto">
@@ -22,7 +25,10 @@
   <section class=" w-full">
     <Achievements />
   </section>
-  <section class=" w-full ">
+  <section class=" w-full">
     <ContactForm />
+  </section>
+  <section class=" w-full bg-lime-400">
+    <Directions />
   </section>
 </div>

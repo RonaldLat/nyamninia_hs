@@ -7,7 +7,7 @@
   import { gAnim2 } from '$lib/gsapAnimations/tweenMe';
 </script>
 
-<section class="dark:bg-gray-800  dark:text-gray-100 sm:my-18 mt-10">
+<section class="dark:bg-gray-800 dark:text-gray-100 sm:my-18 mt-10">
   <div class="container flex flex-col-reverse mx-auto lg:flex-row">
     <div
       class="flex flex-col px-6 py-8 space-y-6 rounded-sm sm:p-8 lg:p-12 lg:w-1/2 xl:w-2/5 dark:bg-violet-400 dark:text-gray-900"

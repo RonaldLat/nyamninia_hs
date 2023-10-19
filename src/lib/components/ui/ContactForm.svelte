@@ -1,5 +1,5 @@
-<div class="w-full md:w-96  lg:w-3/6 md:max-w-full mx-auto ">
-  <div class="p-6 border border-gray-300 sm:rounded-md">
+<div class="w-full md:w-96 lg:w-3/6 md:max-w-full mx-auto">
+  <div class="p-6 border border-gray-300 rounded-sm sm:rounded-md mx-2">
     <form method="POST" action="">
       <label class="block mb-6">
         <span class="text-gray-700">Your name</span>
@@ -44,7 +44,7 @@
           required
         />
       </label>
-      <label class="block mb-6 ">
+      <label class="block mb-6">
         <span class="text-gray-700">Message</span>
         <textarea
           name="message"
@@ -63,7 +63,7 @@
           "
           rows="3"
           placeholder="Your message..."
-        ></textarea>
+        />
       </label>
       <div class="mb-6">
         <button
